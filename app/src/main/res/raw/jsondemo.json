@@ -1,0 +1,94 @@
+{
+  "horizontalscrol" : [
+    {
+      "id" : 1,
+      "email" : "steven@gmail.com",
+      "name" : "Steven",
+      "image" : "R.drawable.img1"
+    },
+    {
+      "id" : 2,
+      "email" : "matt.henry@gmail.com",
+      "name" : "Matt",
+      "image" : "R.drawable.img1"
+    },
+    {
+      "id" : 3,
+      "email" : "david@gmail.com",
+      "name" : "David",
+      "image" : "R.drawable.img1"
+    },
+    {
+      "id" : 4,
+      "email" : "david@gmail.com",
+      "name" : "David",
+      "image" : "R.drawable.img1"
+    },
+    {
+      "id" : 5,
+      "email" : "david@gmail.com",
+      "name" : "David",
+      "image" : "R.drawable.img1"
+    },
+    {
+      "id" : 6,
+      "email" : "david@gmail.com",
+      "name" : "David",
+      "image" : "R.drawable.img1"
+    },
+    {
+      "id" : 7,
+      "email" : "david@gmail.com",
+      "name" : "David",
+      "image" : "R.drawable.img1"
+    },
+    {
+      "id" : 8,
+      "email" : "david@gmail.com",
+      "name" : "David",
+      "image" : "R.drawable.img1"
+    },
+    {
+      "id" : 9,
+      "email" : "david@gmail.com",
+      "name" : "David",
+      "image" : "R.drawable.img1"
+    }
+  ],
+
+  "dealsoftheday": [
+
+    {
+      "id" : 1,
+      "image" : "R.drawable.img3",
+      "product" : "david@gmail.com",
+      "priceh" : "249.00",
+      "pricel" : "19,999.00",
+      "ends" : "7:39:33"
+    },
+    {
+      "id" : 2,
+      "image" : "R.drawable.img3",
+      "product" : "david@gmail.com",
+      "priceh" : "249.00",
+      "pricel" : "19,999.00",
+      "ends" : "7:39:33"
+    },
+    {
+      "id" : 3,
+      "image" : "R.drawable.img3",
+      "product" : "david@gmail.com",
+      "priceh" : "249.00",
+      "pricel" : "19,999.00",
+      "ends" : "7:39:33"
+    },
+    {
+      "id" : 4,
+      "image" : "R.drawable.img3",
+      "product" : "david@gmail.com",
+      "priceh" : "249.00",
+      "pricel" : "19,999.00",
+      "ends" : "7:39:33"
+    }
+  ]
+}

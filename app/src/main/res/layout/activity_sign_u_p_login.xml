@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:layout_marginTop="50dp"
+        android:id="@+id/groupradio"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:visibility="visible"
+            android:id="@+id/loginlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+             <ProgressBar
+                 android:visibility="visible"
+                 android:layout_centerHorizontal="true"
+                 android:id="@+id/loginprog"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/t_name"
+                app:errorEnabled="true"
+                app:counterEnabled="true"
+                app:counterMaxLength="11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/white"
+                    android:id="@+id/name"
+                    android:hint="name"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:errorEnabled="true"
+                android:background="@color/white"
+                android:layout_below="@+id/t_name"
+                android:id="@+id/t_mailmob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mailmob"
+                    android:hint="E mail"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@+id/t_mailmob"
+                android:id="@+id/t_password"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:layout_below="@+id/mailmob"
+                    android:hint="Password"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:onClick="submitsignup"
+                android:text="Register"
+                android:layout_below="@+id/t_password"
+                android:id="@+id/btnregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+        <RadioButton
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/signuplay"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ProgressBar
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/signupprog"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:errorEnabled="true"
+                android:background="@color/white"
+
+                android:id="@+id/t_login_mailmob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_mailmob"
+                    android:hint="E mail"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@+id/t_login_mailmob"
+                android:id="@+id/t_login_password"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_password"
+                    android:inputType="textPassword"
+                    android:layout_below="@+id/mailmob"
+                    android:hint="Password"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:onClick="submitlogin"
+                android:text="Log in"
+                android:layout_below="@+id/t_login_password"
+                android:id="@+id/submitlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RadioGroup>
+
+</RelativeLayout>

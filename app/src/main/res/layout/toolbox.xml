@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar"
+    android:background="@color/baground"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/gradient"
+        android:fitsSystemWindows="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+    <RelativeLayout
+        android:gravity="center"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/gradient"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/drawermenu"
+            android:drawableRight="@drawable/drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/drawermenu"
+            android:id="@+id/amazonlogo"
+            android:drawableRight="@drawable/amzlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:textAlignment="gravity"
+            android:drawableRight="@drawable/addtocard"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:background="@drawable/gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_shape"
+            android:textSize="20dp"
+            android:hint="Search "
+            android:drawableLeft="@drawable/serachicon"
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductClass">
+
+    <ImageView
+         android:layout_marginTop="20dp"
+        android:id="@+id/productimg"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/productimg"
+        android:id="@+id/productname"
+        android:textSize="20dp"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_below="@+id/productname"
+        android:text="@string/app_name"
+        android:id="@+id/productprice"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/productprice"
+        android:id="@+id/coutnlay"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:textSize="30dp"
+            android:onClick="plus"
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+
+            android:textSize="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/conttext"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/minus"
+            android:textSize="30dp"
+            android:onClick="minus"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <Button
+        android:text="By Now"
+        android:onClick="productby"
+        android:layout_below="@id/coutnlay"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/productby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+</RelativeLayout>
